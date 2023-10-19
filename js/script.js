@@ -1,10 +1,5 @@
 // GLOBAL VARIABLES
-let idNum
-let fullName
-let ext
-let email
-let department      
-let submit 
+let idNum, fullName, ext, email, department, empForm
 
 // HELPER FUNCTION TO RETURN DOM ELEMENT
 const $ = (id) => document.getElementById(id)
@@ -15,13 +10,13 @@ fullName         = $('fullName')
 ext              = $('ext')
 email            = $('email')
 department       = $('department')
-submit           = $('submit')
-
+// submit           = $('submit')
+empForm          = $('empForm')
 
 // // display info entered
-const displayInfo = () => (console.log(`${idNum.value}, ${fullName.value}, ${ext.value}, ${email.value}, ${department.value}`))
+const displayInfo = () => (console.log(`ID: ${idNum.value} \nName: ${fullName.value}\nExt: ${ext.value}\nEmail: ${email.value}\nDepartment: ${department.value}`))
 
-submit.addEventListener('click', (e) => {
+empForm.addEventListener('submit', (e) => {
     e.preventDefault()
     displayInfo()
 })

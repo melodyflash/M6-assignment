@@ -11,24 +11,36 @@
         h1              {margin-bottom: 30px;}
         label           {font-weight: bold;}
         input, select   {margin-bottom: 10px;}
-        form            {width: 30%; padding: 20px;}
+        form            {width: 100%; padding: 20px; background-color: rgb(135, 148, 222); border-color: rgb(115, 255, 0); border-style: dashed;}
     </style>
 </head>
 <body class="m-4">
+    <div class="table-responsive">
     <h1>Employee Management System</h1>
+    <table class="table-bordered">
+        <thead></thead>
+          <tr><td>
     <form id="empForm">
-        id number:<br>
-        <input type="text" id="idNum"><br>
-        Name:<br>
+        <label for="idNum">ID:</label><br>
+        <input type="text" maxlength="8" id="idNum"><br>
+        <label for="fullName">Name:</label><br>
         <input type="text" id="fullName"><br>
-        email:<br>
+        <label for="email">email:</label> <br>
         <input type="text" id="email"><br>
-        Dept<br>
-        <input type="text" id="department"><br>
-        Ext<br>
-        <input type="text" id="ext"><br>
-        <button id="submit">Submit</button>
+        <label for="ext">Ext:</label><br>
+        <input type="text" maxlength="4" id="ext"><br>
+        <label for="department">Dept</label><br>
+        <select name="department" id="department">
+          <option value="Administrative">Administrative</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Executive">Executive</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Quality Assurance">Q&A</option>
+          <option value="Sales">Sales</option>
+        </select><br>
+        <input type="submit" value="Submit">
+       
           
-    </form>
+    </form></td></tr></table></div>
 </body>
 </html>
