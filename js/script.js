@@ -5,9 +5,7 @@ let ext
 let email
 let department      
 let submit 
-// let output   
 
-// OPTION 1
 // HELPER FUNCTION TO RETURN DOM ELEMENT
 const $ = (id) => document.getElementById(id)
 
