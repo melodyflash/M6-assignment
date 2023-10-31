@@ -15,4 +15,5 @@ const displayInfo = () => (console.log(`ID: ${idNum.value} \nName: ${fullName.va
 empForm.addEventListener('submit', (e) => {
     e.preventDefault()
     displayInfo()
+    empForm.reset()
 })
